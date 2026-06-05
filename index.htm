@@ -1,0 +1,337 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angamarca Chamba Abogados</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f8ff;
+    color: #1a2a44;
+}
+
+/* HEADER */
+header {
+    background: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+header img {
+    width: 110px;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    color: #0b3c74;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: white;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #0b3c74;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background: linear-gradient(rgba(11,60,116,0.9), rgba(11,60,116,0.9)),
+    url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
+    background-size: cover;
+}
+
+/* BOTÓN */
+.btn {
+    background: white;
+    color: #0b3c74;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+.section {
+    padding: 70px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+    background: #0b3c74;
+    display: block;
+    margin: 10px auto;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 15px auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* CARDS */
+.cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* EQUIPO */
+.equipo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.miembro {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.miembro:hover {
+    transform: translateY(-10px);
+}
+
+.miembro img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #0b3c74;
+}
+
+.miembro h3 {
+    margin: 10px 0 5px;
+    color: #0b3c74;
+}
+
+.miembro p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* CONTACTO */
+.contacto {
+    background: #0b3c74;
+    color: white;
+    text-align: center;
+}
+
+input, textarea {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.direccion {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background: #082a52;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.jpg" alt="Logo">
+<h1>Angamarca Chamba Abogados</h1>
+<p>Defensa legal con ética y compromiso</p>
+</header>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#equipo">Equipo</a>
+<a href="#servicios">Servicios</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="inicio">
+<h1>Soluciones legales confiables</h1>
+<p>Protegemos tus derechos con profesionalismo</p>
+<a class="btn" href="https://wa.me/593985220503">Contactar ahora</a>
+</section>
+
+<section class="section" id="nosotros">
+<h2>Sobre Nosotros</h2>
+
+<p>
+En Angamarca Chamba Abogados somos un consorcio jurídico comprometido con brindar asesoría legal integral, ética y estratégica, orientada a la protección efectiva de los derechos de nuestros clientes.
+</p>
+
+<p>
+Contamos con un equipo de profesionales altamente capacitados, con sólida formación jurídica y experiencia en diversas áreas del derecho, lo que nos permite ofrecer soluciones precisas, oportunas y personalizadas.
+</p>
+
+<p>
+Nuestra firma se distingue por su enfoque humano y cercano, trabajando con responsabilidad, transparencia y compromiso en cada caso.
+</p>
+
+</section>
+
+<section class="section" id="equipo">
+<h2>Nuestro Equipo</h2>
+
+<div class="equipo">
+
+<div class="miembro">
+<img src="ivonnechamba.jpg" alt="Ivonne Chamba">
+<h3>Abg. Ivonne Chamba</h3>
+<p>
+Especialista en derecho administrativo, sumarios administrativos y procesos disciplinarios. 
+</p>
+</div>
+
+<div class="miembro">
+<img src="roberthangamarca.jpg" alt="Roberth Angamarca">
+<h3>Abg. Roberth Angamarca</h3>
+<p>
+Especialista en derecho de familia, derecho civil, trámites notariales y registrales.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="section" id="servicios">
+<h2>Servicios</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Derecho de Familia</h3>
+<p>Divorcios, pensiones alimenticias, tenencia, régimen de visitas.</p>
+</div>
+
+<div class="card">
+<h3>Derecho Civil</h3>
+<p>Contratos, obligaciones y conflictos legales.</p>
+</div>
+
+<div class="card">
+<h3>Trámites Notariales</h3>
+<p>Escrituras, declaraciones y legalizaciones.</p>
+</div>
+
+<div class="card">
+<h3>Derecho Administrativo</h3>
+<p>Sumarios administrativos y procesos disciplinarios.</p>
+</div>
+</div>
+
+</section>
+
+<section class="section contacto" id="contacto">
+<h2>Agenda tu consulta</h2>
+
+<input type="text" id="nombre" placeholder="Nombre">
+<input type="text" id="telefono" placeholder="Teléfono">
+<textarea id="mensaje" placeholder="Motivo de consulta"></textarea>
+
+<br>
+<button class="btn" onclick="enviarWhatsApp()">Enviar</button>
+
+<div class="direccion">
+📍 Loja, calle José Antonio Eguiguren entre Bolívar y Sucre, Edificio Portal Jurídico
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Angamarca Chamba Abogados</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/593985220503">💬</a>
+
+<script>
+function enviarWhatsApp(){
+    let nombre = document.getElementById('nombre').value;
+    let telefono = document.getElementById('telefono').value;
+    let mensaje = document.getElementById('mensaje').value;
+
+    let url = "https://wa.me/593985220503?text="
+    + "Nombre: " + nombre + "%0A"
+    + "Teléfono: " + telefono + "%0A"
+    + "Consulta: " + mensaje;
+
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
