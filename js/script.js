@@ -1,14 +1,22 @@
-function enviarWhatsApp(){
-    let nombre = document.getElementById('nombre').value;
-    let telefono = document.getElementById('telefono').value;
-    let mensaje = document.getElementById('mensaje').value;
-    let modalidad = document.getElementById('modalidad').value;
+function enviarWhatsApp() {
+    const nombre = document.getElementById("nombre").value;
+    const telefono = document.getElementById("telefono").value;
+    const area = document.getElementById("areaConsulta").value;
+    const modalidad = document.getElementById("modalidad").value;
+    const mensaje = document.getElementById("mensaje").value;
 
-    let url = "https://wa.me/593985220503?text="
-    + "Nombre: " + nombre + "%0A"
-    + "Teléfono: " + telefono + "%0A"
-    + "Modalidad: " + modalidad + "%0A"
-    + "Consulta: " + mensaje;
+    const texto = `Hola, deseo agendar una consulta jurídica.
 
-    window.open(url, '_blank');
+Nombre: ${nombre}
+Teléfono: ${telefono}
+Área de consulta: ${area}
+Modalidad: ${modalidad}
+
+Detalle de la consulta:
+${mensaje}`;
+
+    const numeroWhatsApp = "593999999999"; // Reemplaza con tu número
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, "_blank");
 }
