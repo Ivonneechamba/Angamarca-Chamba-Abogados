@@ -154,13 +154,6 @@ nav a {
     line-height: 1.6;
 }
 
-/* CONTACTO */
-.contacto {
-    background: #0b3c74;
-    color: white;
-    text-align: center;
-}
-
 input, textarea, select {
     width: 90%;
     max-width: 400px;
