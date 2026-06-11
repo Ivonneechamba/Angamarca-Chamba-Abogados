@@ -15,7 +15,7 @@ Modalidad: ${modalidad}
 Detalle de la consulta:
 ${mensaje}`;
 
-    const numeroWhatsApp = "593999999999"; // Reemplaza con tu número
+    const numeroWhatsApp = "593985220503"; // Reemplaza con tu número
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
     window.open(url, "_blank");
