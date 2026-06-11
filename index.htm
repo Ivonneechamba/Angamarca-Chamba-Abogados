@@ -112,19 +112,28 @@ Especialista en derecho de familia, derecho civil, trámites notariales y regist
 </section>
 
 <section class="section contacto" id="contacto">
-<h2>Agenda tu consulta</h2>
+    <h2>Agenda tu consulta</h2>
 
-<input type="text" id="nombre" placeholder="Nombre">
-<input type="text" id="telefono" placeholder="Teléfono">
-<textarea id="mensaje" placeholder="Motivo de consulta"></textarea>
-<select id="modalidad">
-    <option value="">Seleccione modalidad de atención</option>
-    <option value="Presencial">Presencial</option>
-    <option value="Virtual">Virtual</option>
-</select>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="telefono" placeholder="Teléfono">
 
-<br>
-<button class="btn" onclick="enviarWhatsApp()">Enviar</button>
+    <select id="areaConsulta">
+        <option value="">Seleccione el área de consulta</option>
+        <option value="Derecho Civil">Derecho Civil</option>
+        <option value="Derecho de Familia">Derecho de Familia</option>
+        <option value="Derecho Administrativo">Derecho Administrativo</option>
+        <option value="Trámites Notariales">Trámites Notariales</option>
+    </select>
+
+    <select id="modalidad">
+        <option value="">Seleccione modalidad de atención</option>
+        <option value="Presencial">Presencial</option>
+        <option value="Virtual">Virtual</option>
+    </select>
+
+    <textarea id="mensaje" placeholder="Describa brevemente su consulta"></textarea>
+
+    <button onclick="enviarWhatsApp()">Agendar consulta</button>
 
 <div class="direccion">
 📍 Loja, calle José Antonio Eguiguren entre Bolívar y Sucre, Edificio Portal Jurídico
