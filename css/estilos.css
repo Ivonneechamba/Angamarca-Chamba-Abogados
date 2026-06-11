@@ -309,4 +309,9 @@ footer {
 .blog-card p {
     font-size: 14px;
     line-height: 1.6;
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
 }
