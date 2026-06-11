@@ -271,4 +271,84 @@ footer {
 .icono:hover {
     background: #0b3c74;
     transform: translateY(-4px) scale(1.08);
+    .contacto {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contacto h2 {
+    text-align: center;
+    color: #1d3557;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contacto input,
+.contacto select,
+.contacto textarea {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    border: 1px solid #d6dce5;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #fafbfc;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contacto input:focus,
+.contacto select:focus,
+.contacto textarea:focus {
+    outline: none;
+    border-color: #1d3557;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(29, 53, 87, 0.12);
+}
+
+.contacto textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contacto select {
+    cursor: pointer;
+}
+
+.contacto button {
+    width: 100%;
+    padding: 15px;
+    background: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contacto button:hover {
+    background: #14263d;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(29, 53, 87, 0.25);
+}
+
+.contacto button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        padding: 30px 20px;
+    }
+
+    .contacto h2 {
+        font-size: 1.6rem;
 }
