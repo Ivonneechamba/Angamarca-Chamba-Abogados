@@ -271,4 +271,42 @@ footer {
 .icono:hover {
     background: #0b3c74;
     transform: translateY(-4px) scale(1.08);
+/* BLOG */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.blog-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    padding: 20px;
+}
+
+.blog-card h3 {
+    color: #0b3c74;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 14px;
+    line-height: 1.6;
 }
