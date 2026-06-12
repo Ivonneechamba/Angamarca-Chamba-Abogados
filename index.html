@@ -76,38 +76,34 @@ Nuestra firma se distingue por su enfoque humano y cercano, trabajando con respo
     <h2>Nuestro Equipo</h2>
 
 <div class="team">
-    <div class="member">
-        <img src="ivonnechamba.jpg">
-        <h3>Abg. Ivonne Chamba</h3>
-        <p>Especialista en procesos sumarios administrativos y disciplinarios.</p>
+   <div class="member">
+    <img src="ivonnechamba.jpg">
+    <h3>Abg. Ivonne Chamba</h3>
+    <p>Especialista en sumarios administrativos y procedimientos disciplinarios.</p>
 
-<p>
-📧 Correo: ivonnechamba2012@gmail.com<br>
-📞 Contacto: 0985220503
-</p>
-    </div>
+    <button onclick="abrirModal('ivonne')">
+        Conoce más
+    </button>
+</div>
 
     <div class="member">
         <img src="roberthangamarca.jpg">
         <h3>Abg. Roberth Angamarca</h3>
         <p>Especialista en derecho civil, familia, trámites notariales y registrales.</p>
 
-<p>
-📧 Correo: rob.angamarca10@hotmail.com<br>
-📞 Contacto: 0994912887
-</p>
-    </div>
+ <button onclick="abrirModal('roberth')">
+        Conoce más
+    </button>
+</div>
 
 <div class="member">
         <img src="franklin.jpg">
         <h3>Abg. Franklin Angamarca</h3>
         <p>Especialista en derecho civil, familia, penal y tránsito.</p>
 
-<p>
-📧 Correo: ab.franklinangamarca@hotmail.com<br>
-📞 Contacto: 0986197750
-</p>
-    </div>
+ <button onclick="abrirModal('franklin')">
+        Conoce más
+    </button>
 </div>
 
 </section>
@@ -189,6 +185,61 @@ Nuestra firma se distingue por su enfoque humano y cercano, trabajando con respo
 </a>
 
 <script src="script.js"></script>
+<!-- MODAL IVONNE -->
+<div id="modal-ivonne" class="modal">
+    <div class="modal-content">
+        <span onclick="cerrarModal('ivonne')" class="close">&times;</span>
 
+        <h2>Abg. Ivonne Chamba</h2>
+
+        <p><b>Especialidad:</b> Derecho Administrativo</p>
+        <p><b>Experiencia:</b> Asesoría en procesos administrativos y defensa legal.</p>
+
+        <p><b>Correo:</b> ivonnechamba@abogados.com</p>
+        <p><b>Teléfono:</b> 0985220503</p>
+
+        <a href="https://wa.me/593985220503" target="_blank" class="btn">
+            Contactar por WhatsApp
+        </a>
+    </div>
+</div>
+
+<!-- MODAL ROBERTH -->
+<div id="modal-roberth" class="modal">
+    <div class="modal-content">
+        <span onclick="cerrarModal('roberth')" class="close">&times;</span>
+
+        <h2>Abg. Roberth Angamarca</h2>
+
+        <p><b>Especialidad:</b> Derecho Civil y Familia</p>
+        <p><b>Experiencia:</b> Procesos civiles, alimentos, divorcios.</p>
+
+        <p><b>Correo:</b> roberthangamarca@abogados.com</p>
+        <p><b>Teléfono:</b> 0985220503</p>
+
+        <a href="https://wa.me/593985220503" target="_blank" class="btn">
+            Contactar por WhatsApp
+        </a>
+    </div>
+</div>
+
+<!-- MODAL FRANKLIN -->
+<div id="modal-franklin" class="modal">
+    <div class="modal-content">
+        <span onclick="cerrarModal('franklin')" class="close">&times;</span>
+
+        <h2>Abg. Franklin Angamarca</h2>
+
+        <p><b>Especialidad:</b> Derecho Civil y Familia</p>
+        <p><b>Experiencia:</b> Trámites notariales y registrales.</p>
+
+        <p><b>Correo:</b> franklinangamarca@abogados.com</p>
+        <p><b>Teléfono:</b> 0985220503</p>
+
+        <a href="https://wa.me/593985220503" target="_blank" class="btn">
+            Contactar por WhatsApp
+        </a>
+    </div>
+</div>
 </body>
 </html>
