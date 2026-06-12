@@ -103,34 +103,34 @@ Nuestra firma se distingue por su enfoque humano y cercano, trabajando con respo
     <h2>Agenda tu cita</h2>
 
 <div class="form-container">
-    <form>
+ <form id="agendaForm">
 
-        <input type="text" placeholder="Nombre completo" required>
-        <input type="tel" placeholder="Teléfono" required>
+    <input type="text" id="nombre" placeholder="Nombre completo" required>
+    <input type="tel" id="telefono" placeholder="Teléfono" required>
 
-        <select required>
-            <option value="">Tipo de cita</option>
-            <option>Virtual</option>
-            <option>Presencial</option>
-        </select>
+    <select id="tipoCita" required>
+        <option value="">Tipo de cita</option>
+        <option>Virtual</option>
+        <option>Presencial</option>
+    </select>
 
-        <select required>
-            <option value="">Área legal</option>
-            <option>Derecho de Familia</option>
-            <option>Derecho Civil</option>
-            <option>Derecho Administrativo</option>
-            <option>Trámites Notariales</option>
-            <option>Trámites Registrales</option>
-        </select>
-<textarea 
-    id="descripcion"
-    placeholder="Describa brevemente su consulta o problema legal"
-    rows="4"
-    required>
-</textarea>
-        <button type="submit">Agendar cita</button>
+    <select id="areaLegal" required>
+        <option value="">Área legal</option>
+        <option>Derecho de Familia</option>
+        <option>Derecho Civil</option>
+        <option>Derecho Administrativo</option>
+        <option>Trámites Notariales</option>
+        <option>Trámites Registrales</option>
+    </select>
 
-    </form>
+    <textarea id="descripcion"
+        placeholder="Describa brevemente su consulta o problema legal"
+        rows="4"
+        required></textarea>
+
+    <button type="submit">Agendar cita</button>
+
+</form>
 </div>
 
 </section>
