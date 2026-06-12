@@ -108,12 +108,18 @@ nav a {
     text-align: left;
 }
 
-form input, form select {
+form input,
+form select,
+form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: none;
     border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+}
 }
 
 form button {
@@ -171,6 +177,10 @@ form select {
     border: none;
     box-sizing: border-box; /* 🔥 CLAVE */
     font-size: 16px;
+}
+form textarea {
+    min-height: 120px;
+    resize: vertical;
 }
 .social {
     margin-bottom: 10px;
