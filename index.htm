@@ -1,53 +1,51 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Angamarca Chamba Abogados</title>
-
-<link rel="stylesheet" href="css/estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angamarca Chamba Abogados</title>
+    <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
+<!-- HEADER -->
 
-<div class="header-top">
-    <div class="redes">
-        <a href="https://www.facebook.com/profile.php?id=100085705746742" target="_blank" class="icono">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/angamarcachamba" target="_blank" class="icono">
-            <i class="fab fa-instagram"></i>
+<header class="header">
+    <div class="container">
+        <img src="logo.jpg" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#equipo">Equipo</a></li>
+                <li><a href="#formulario">Agendar</a></li>
+                <li><a href="#contacto">Ubicación</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+    <div class="overlay">
+        <h1>Angamarca Chamba Abogados</h1>
+        <p>Compromiso, ética y soluciones legales</p>
+        <a href="https://wa.me/593985220503" class="btn" target="_blank">
+            WhatsApp
         </a>
     </div>
-</div>
-
-<img src="img/logo.jpg" alt="Logo">
-<h1>Angamarca Chamba Abogados</h1>
-<p>Defensa legal con ética y compromiso</p>
-
-</header>
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#equipo">Equipo</a>
-<a href="#servicios">Servicios</a>
-<a href="#contacto">Contacto</a>
-</nav>
-
-<section class="hero" id="inicio">
-<h1>Soluciones legales confiables</h1>
-<p>Protegemos tus derechos con profesionalismo</p>
-<a class="btn" href="https://wa.me/593985220503">Contactar ahora</a>
 </section>
 
-<section class="section" id="nosotros">
-<h2>Sobre Nosotros</h2>
+<!-- ================= NOSOTROS ================= -->
 
-<p>
-En Angamarca Chamba Abogados somos un consorcio jurídico comprometido con brindar asesoría legal integral, ética y estratégica, orientada a la protección efectiva de los derechos de nuestros clientes.
+<section id="nosotros" class="section white">
+    <h2>Sobre Nosotros</h2>
+   <p>
+En Angamarca Chamba somos un consorcio jurídico comprometido con brindar asesoría legal integral, ética y estratégica, orientada a la protección efectiva de los derechos de nuestros clientes.
 </p>
 
 <p>
@@ -57,120 +55,120 @@ Contamos con un equipo de profesionales altamente capacitados, con sólida forma
 <p>
 Nuestra firma se distingue por su enfoque humano y cercano, trabajando con responsabilidad, transparencia y compromiso en cada caso.
 </p>
-
 </section>
 
-<section class="section" id="equipo">
-<h2>Nuestro Equipo</h2>
+<!-- ================= SERVICIOS ================= -->
 
-<div class="equipo">
-
-<div class="miembro">
-<img src="img/ivonnechamba.jpg" alt="Ivonne Chamba">
-<h3>Abg. Ivonne Chamba</h3>
-<p>
-Especialista en derecho administrativo, sumarios administrativos y procesos disciplinarios. 
-</p>
-</div>
-
-<div class="miembro">
-<img src="img/roberthangamarca.jpg" alt="Roberth Angamarca">
-<h3>Abg. Roberth Angamarca</h3>
-<p>
-Especialista en derecho de familia, derecho civil, trámites notariales y registrales.
-</p>
-</div>
-
-</div>
+<section id="servicios" class="section blue">
+    <h2>Servicios</h2>
+    <div class="services">
+        <div class="card">Derecho de Familia</div>
+        <div class="card">Derecho Civil</div>
+        <div class="card">Derecho Administrativo</div>
+        <div class="card">Trámites Notariales</div>
+        <div class="card">Trámites Registrales</div>
+    </div>
 </section>
 
-<section class="section" id="servicios">
-<h2>Servicios</h2>
-<section class="section">
-   
-<div class="cards">
-<div class="card">
-<h3>Derecho de Familia</h3>
-<p>Divorcios, pensiones alimenticias, tenencia, régimen de visitas.</p>
-</div>
+<!-- ================= EQUIPO ================= -->
 
-<div class="card">
-<h3>Derecho Civil</h3>
-<p>Contratos, obligaciones y conflictos legales.</p>
-</div>
+<section id="equipo" class="section white">
+    <h2>Nuestro Equipo</h2>
 
-<div class="card">
-<h3>Trámites Notariales</h3>
-<p>Escrituras, declaraciones y legalizaciones.</p>
-</div>
-
-<div class="card">
-<h3>Derecho Administrativo</h3>
-<p>Sumarios administrativos y procesos disciplinarios.</p>
-</div>
-</div>
-
-</section>
-
-<section class="section contacto" id="contacto">
-    <h2>Agenda tu consulta</h2>
-
-    <input type="text" id="nombre" placeholder="Nombre">
-    <br>
-    <input type="text" id="telefono" placeholder="Teléfono">
-     <br>
-
-    <select id="areaConsulta">
-        <option value="">Seleccione el área de consulta</option>
-        <option value="Derecho Civil">Derecho Civil</option>
-        <option value="Derecho de Familia">Derecho de Familia</option>
-        <option value="Derecho Administrativo">Derecho Administrativo</option>
-        <option value="Trámites Notariales">Trámites Notariales</option>
-    </select>
-     <br>
-
-    <select id="modalidad">
-        <option value="">Seleccione modalidad de atención</option>
-        <option value="Presencial">Presencial</option>
-        <option value="Virtual">Virtual</option>
-    </select>
-     <br>
-
-    <textarea id="mensaje" placeholder="Describa brevemente su consulta"></textarea>
-     <br>
-
-    <button onclick="enviarWhatsApp()">Agendar consulta</button>
-
-<div class="direccion">
-📍 Loja, calle José Antonio Eguiguren entre Bolívar y Sucre, Edificio Portal Jurídico
-</div>
-<div class="mapa-container">
-    <div class="mapa-header">
-        <h3>Nuestra Ubicación</h3>
-        <p>Visítanos en nuestras oficinas</p>
+<div class="team">
+    <div class="member">
+        <img src="ivonnechamba.jpg">
+        <h3>Abg. Ivonne Chamba</h3>
+        <p>Especialista en derecho administrativo.</p>
     </div>
 
-    <div class="mapa">
-        <iframe 
-            src="https://www.google.com/maps?q=-3.996056064829191,-79.20262007870429&hl=es&z=17&output=embed"
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+    <div class="member">
+        <img src="roberthangamarca.jpg">
+        <h3>Abg. Roberth Angamarca</h3>
+        <p>Especialista en derecho civil y familia.</p>
     </div>
 
-    <a class="btn mapa-btn" target="_blank" href="https://www.google.com/maps?q=-3.996056064829191,-79.20262007870429">
-        📍 Cómo llegar
+<div class="member">
+        <img src="franklin.jpg">
+        <h3>Abg. Franklin Angamarca</h3>
+        <p>Especialista en derecho civil y familia.</p>
+    </div>
+</div>
+
+</section>
+
+<!-- ================= FORMULARIO ================= -->
+
+<section id="formulario" class="section blue">
+    <h2>Agenda tu cita</h2>
+
+<div class="form-container">
+    <form>
+
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="tel" placeholder="Teléfono" required>
+
+        <select required>
+            <option value="">Tipo de cita</option>
+            <option>Virtual</option>
+            <option>Presencial</option>
+        </select>
+
+        <select required>
+            <option value="">Área legal</option>
+            <option>Derecho de Familia</option>
+            <option>Derecho Civil</option>
+            <option>Derecho Administrativo</option>
+            <option>Trámites Notariales</option>
+            <option>Trámites Registrales</option>
+        </select>
+
+        <button type="submit">Agendar cita</button>
+
+    </form>
+</div>
+
+</section>
+
+<!-- ================= CONTACTO ================= -->
+
+<section id="contacto" class="section white">
+    <h2>Ubicación</h2>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps?q=-3.996756891616779,-79.20264205954489&output=embed"></iframe>
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="social">
+
+    <a href="https://www.facebook.com/profile.php?id=100085705746742" target="_blank">
+        <i class="fab fa-facebook-f"></i> Facebook
     </a>
+
+    <a href="https://www.tiktok.com/@abg.ivonne_chamba" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+    <a href="https://www.instagram.com/angamarcachamba" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+
 </div>
-
-</section>
-
-<footer>
-<p>© 2026 Angamarca Chamba Abogados</p>
+    <p>© 2026 Angamarca Chamba Abogados</p>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/593985220503">💬</a>
+<!-- WHATSAPP -->
 
-<script src="js/script.js"></script>
+<a href="https://wa.me/593985220503" class="whatsapp" target="_blank">
+💬
+</a>
+
+<script src="script.js"></script>
+
 </body>
 </html>
