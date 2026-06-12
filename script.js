@@ -33,3 +33,27 @@ ${descripcion}`;
     });
 
 });
+function abrirModal(nombre) {
+    const modal = document.getElementById("modal-" + nombre);
+    if (modal) {
+        modal.style.display = "block";
+    } else {
+        console.log("No se encontró el modal: modal-" + nombre);
+    }
+}
+
+function cerrarModal(nombre) {
+    const modal = document.getElementById("modal-" + nombre);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Cerrar modal al hacer clic fuera
+window.addEventListener("click", function(event) {
+    document.querySelectorAll(".modal").forEach(modal => {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
