@@ -62,67 +62,48 @@ fetch("articulos.json")
 
 .then(data => {
 
-let html = "";
+    let html = "";
 
+    data.forEach(post => {
 
-data.forEach(post => {
+        html += `
 
+        <article class="entrada-blog">
 
-html += `
+            <img src="docentes.jpg" class="imagen-blog">
 
-<article class="entrada-blog">
+            <h2>
+                ${post.titulo}
+            </h2>
 
+            <p class="autor">
+                <strong>Autora:</strong> ${post.autora}
+            </p>
 
-<img src="${post.imagen}" class="imagen-blog">
+            <p class="fecha">
+                ${post.fecha} | ${post.categoria}
+            </p>
 
+            <p>
+                ${post.resumen}
+            </p>
 
-<h2>
-${post.titulo}
-</h2>
+            <a href="${post.url}" class="leer-articulo">
+                Leer artículo completo
+            </a>
 
+        </article>
 
-<p class="autor">
-<strong>Autora:</strong> ${post.autora}
-</p>
+        <hr>
 
+        `;
 
-<p class="fecha">
-${post.fecha} | ${post.categoria}
-</p>
-
-
-<p>
-${post.resumen}
-</p>
-
-
-<a href="${post.url}" class="leer-articulo">
-Leer artículo completo
-</a>
-
-
-</article>
-
-
-<hr>
-
-
-`;
-
-
-});
-
-
-document.getElementById("lista-articulos").innerHTML = html;
-
-
-});
-
+    });
 
     document.getElementById("lista-articulos").innerHTML = html;
 
-
 })
+
 .catch(error => {
 
     console.log("Error:", error);
