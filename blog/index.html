@@ -65,39 +65,46 @@ fetch("articulos.json")
     data.forEach(post => {
 
         html += `
-        html += `
+        
+        <article class="entrada-blog">
 
-<div class="entrada-blog">
+            <h2>
+                <a href="${post.url}">
+                    ${post.titulo}
+                </a>
+            </h2>
 
-<h2>
-<a href="${post.url}">
-${post.titulo}
-</a>
-</h2>
+            <p>
+                <strong>Autora:</strong> Abg. Ivonne Chamba Torres
+            </p>
 
-<p class="autor">
-Por: Abg. Ivonne Chamba Torres
-</p>
+            <p>
+                ${post.fecha} | ${post.categoria}
+            </p>
 
-<p class="fecha">
-${post.fecha} | ${post.categoria}
-</p>
+            <p>
+                ${post.resumen}
+            </p>
 
-<p>
-${post.resumen}
-</p>
+        </article>
 
-</div>
+        <hr>
 
-<hr>
-
-`;
-        <br>
         `;
 
     });
 
+
     document.getElementById("lista-articulos").innerHTML = html;
+
+
+})
+.catch(error => {
+
+    console.log("Error:", error);
+
+    document.getElementById("lista-articulos").innerHTML =
+    "<p>No se pudieron cargar los artículos.</p>";
 
 });
 
