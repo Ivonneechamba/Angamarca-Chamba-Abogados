@@ -426,3 +426,107 @@ form button {
     text-decoration: underline;
 
 }
+/* ================= ARTICULO JURIDICO INDIVIDUAL ================= */
+
+
+.articulo {
+
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+
+    font-family: Cambria, Georgia, serif;
+
+}
+
+
+
+.portada-articulo {
+
+    display:block;
+
+    width:100%;
+
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.articulo h1 {
+
+    text-align:center;
+
+    font-family:Cambria, Georgia, serif;
+
+    font-size:34px;
+
+    line-height:1.4;
+
+    color:#222;
+
+}
+
+
+
+.autor-articulo {
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+
+
+.datos-articulo {
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.contenido-articulo {
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    color:#333;
+
+}
+
+
+
+.contenido-articulo h2 {
+
+    margin-top:40px;
+
+    font-size:26px;
+
+    color:#8b0000;
+
+}
+
+
+
+.contenido-articulo p {
+
+    margin-bottom:22px;
+
+}
