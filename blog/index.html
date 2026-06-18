@@ -57,12 +57,16 @@
 <script>
 
 fetch("articulos.json")
+
 .then(response => response.json())
+
 .then(data => {
 
-    let html = "";
+let html = "";
 
-   data.forEach(post => {
+
+data.forEach(post => {
+
 
 html += `
 
@@ -88,8 +92,13 @@ ${post.fecha} | ${post.categoria}
 
 
 <p>
-${post.contenido}
+${post.resumen}
 </p>
+
+
+<a href="${post.url}" class="leer-articulo">
+Leer artículo completo
+</a>
 
 
 </article>
@@ -99,6 +108,13 @@ ${post.contenido}
 
 
 `;
+
+
+});
+
+
+document.getElementById("lista-articulos").innerHTML = html;
+
 
 });
 
