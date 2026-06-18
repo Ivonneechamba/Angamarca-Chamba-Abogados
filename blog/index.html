@@ -62,37 +62,45 @@ fetch("articulos.json")
 
     let html = "";
 
-    data.forEach(post => {
+   data.forEach(post => {
 
-        html += `
-        
-        <article class="entrada-blog">
+html += `
 
-            <h2>
-                <a href="${post.url}">
-                    ${post.titulo}
-                </a>
-            </h2>
+<article class="entrada-blog">
 
-            <p>
-                <strong>Autora:</strong> Abg. Ivonne Chamba Torres
-            </p>
 
-            <p>
-                ${post.fecha} | ${post.categoria}
-            </p>
+<img src="${post.imagen}" class="imagen-blog">
 
-            <p>
-                ${post.resumen}
-            </p>
 
-        </article>
+<h2>
+${post.titulo}
+</h2>
 
-        <hr>
 
-        `;
+<p class="autor">
+<strong>Autora:</strong> ${post.autora}
+</p>
 
-    });
+
+<p class="fecha">
+${post.fecha} | ${post.categoria}
+</p>
+
+
+<p>
+${post.contenido}
+</p>
+
+
+</article>
+
+
+<hr>
+
+
+`;
+
+});
 
 
     document.getElementById("lista-articulos").innerHTML = html;
